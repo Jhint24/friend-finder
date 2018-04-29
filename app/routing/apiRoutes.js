@@ -1,5 +1,5 @@
 //linking data
-var friendsData = require("../data/friend.js");
+var friendsData = require("../data/friends.js");
 //exporting get function of data and POST for survey results
 module.exports = function(app)    {
     //shows data to the page when visited
