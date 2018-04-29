@@ -1,35 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <title>FriendFinder</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder Survey</title>
+    <!--JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 </head>
+
 <body>
     <div class="container">
-
-        <div class="jumbotron">
-          <h1 class="text-center"><span class="glyphicon glyphicon-fire"></span> Friend Finder <span class="glyphicon glyphicon-fire"></span></h1>
-          <hr>
-          <h2 class="text-center">Friend Survey</h2>
-          <br>
-    
-          <div class="text-center">
-
-          </div>
-    
+        <div class="row">
+            <div class="col s12">
+                <h2>Survey Questions</h2>
+            </div>
         </div>
-    
+        <hr>
+        <div class="row">
+            <div class="col s12">
+                <h4>About You</h4>
+            </div>
+        </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Required" id="first_name" type="text" class="validate">
+                        <label for="first_name">Name</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Required" id="first_name" type="text" class="validate">
+                        <label for="first_name">Link to Photo</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 1</h4>
+                <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 2</h4>
+                <p>Generally speaking, you rely more on your experience tha nyour imagination.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 3</h4>
+                <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 4</h4>
+                <p>You rarely do something just out of sheer curiosity.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 5</h4>
+                <p>People can rarely upset you.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 6</h4>
+                <p>It is often difficult for you to relate to other people's feelings.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 7</h4>
+                <p>In a discussion, truth should be more imporatnt than people's sensitivities.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 8</h4>
+                <p>You rarely get carriend away by fantasies and ideas.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 9</h4>
+                <p>You think that everyone's views should be respected regardless of whether they ares uuported by facts or
+                    not.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 10</h4>
+                <p>You feel more energetic after spending time with a group of people.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
         <footer class="footer">
-          <div class="container">
-                <p>
-                <a href="/api/friends">API Friends List</a> |
-                <a href="https://github.com/Jhint24">GitHub</a>
-                </p>
-          </div>
-        </footer>
-    
-      </div>
+                <div class="container">
+                      <p>
+                      <a href="/api/friends">API Friends List</a> |
+                      <a href="https://github.com/Jhint24">GitHub</a>
+                      </p>
+                </div>
+              </footer>
+    </div>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+    </script>
 </body>
+
 </html>
