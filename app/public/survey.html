@@ -23,11 +23,6 @@
         </div>
         <hr>
         <div class="row">
-            <div class="col s12">
-                <h4>On a Scale of 1-5 (1 being least like you and 5 being most like you) Please Respond to the following Statements/Questions</h4>
-            </div>
-        </div>
-        <div class="row">
             <form class="col s12">
                 <div class="row">
                     <div class="input-field col s6">
@@ -41,13 +36,19 @@
             <form class="col s12">
                 <div class="row">
                     <div class="input-field col s6">
-                        <input placeholder="Required" id="first_name" type="text" class="validate">
+                        <input placeholder="Required" id="user_photo" type="text" class="validate">
                         <label for="first_name">Link to a Photo of Your Beautiful Face</label>
                     </div>
                 </div>
             </form>
         </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>On a Scale of 1-5 (1 being least like you and 5 being most like you) Please Respond to the following Statements/Questions</h4>
+            </div>
+        </div>
         <hr>
+
         <div class="row">
             <div class="col s12">
                 <h4>Question 1</h4>
@@ -56,7 +57,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <select>
+                <select id="Q1">
                     <option value="" disabled selected>Choose your rating</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -75,7 +76,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <select>
+                <select id="Q2">
                     <option value="" disabled selected>Choose your rating</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -94,7 +95,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <select>
+                <select id="Q3">
                     <option value="" disabled selected>Choose your rating</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -113,7 +114,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <select>
+                <select id="Q4">
                     <option value="" disabled selected>Choose your rating</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -132,7 +133,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <select>
+                <select id="Q5">
                     <option value="" disabled selected>Choose your rating</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -151,7 +152,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <select>
+                <select id="Q6">
                     <option value="" disabled selected>Choose your rating</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -170,7 +171,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <select>
+                <select id="Q7">
                     <option value="" disabled selected>Choose your rating</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -189,7 +190,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <select>
+                <select id="Q8">
                     <option value="" disabled selected>Choose your rating</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -208,7 +209,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <select>
+                <select id="Q9">
                     <option value="" disabled selected>Choose your rating</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -227,7 +228,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <select>
+                <select id="Q10">
                     <option value="" disabled selected>Choose your rating</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -264,6 +265,9 @@
             event.preventDefault();
             // Here we grab the form elements
             var newMatch = {
+                name: $("#first_name").val().trim(),
+                photo: $("#user_photo").val().trim(),
+                scores: [
                 Q1: $("#Q1").val().trim(),
                 Q2: $("#Q2").val().trim(),
                 Q3: $("#Q3").val().trim(),
@@ -274,6 +278,7 @@
                 Q8: $("#Q8").val().trim(),
                 Q9: $("#Q9").val().trim(),
                 Q10: $("#Q10").val().trim()
+            ]
             };
             console.log(newMatch);
 
