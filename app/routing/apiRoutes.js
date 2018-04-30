@@ -13,3 +13,31 @@ app.post("/api/friends", function(req, res)  {
 });
 
 };
+// function getMatchData() {
+
+//     var currentUser = newMatch.scores;
+//     var users = friendArray.scores;
+//     console.log(currentUser + "currentUser");
+//     console.log(users + "users");
+//     function diffArrays(arr1, arr2) {
+//       var grandTotal = 0;
+    
+//       for (var i = 0; i < 5; i++) {
+//         var score = arr1[i] - arr2[i];
+//         grandTotal += score;
+//       }
+//       return grandTotal;
+//     }
+    
+//     const compArr = [];
+    
+//     for (var i = 0; i < users.length; i++) {
+//       const iNeedLove = diffArrays(currentUser, users[i]);
+//       compArr.push(iNeedLove);
+//     }
+//     console.log(compArr);
+    
+          // Then display in modal
+                // $("#matchName").text(currentUser.name);
+                // $('#matchPic').attr("src", currentUser.photo);
+    // }
