@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!--<body style="background-image: url(../style/love.jpg)">-->
     <div class="container">
         <div class="row">
             <div class="col s12">
@@ -240,10 +241,21 @@
             </div>
         </div>
         <div class="row">
-            <button class="btn waves-effect waves-light submit" type="submit" name="action">Submit
+            <button data-toggle="modal1" class="btn waves-effect waves-light submit" type="submit" name="action">Submit
                 <i class="material-icons right">send</i>
             </button>
         </div>
+          <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Your Match is: </h4>
+          <p><h5 id="matchName"></h5>
+            <img src="" id="matchPic"></p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">THANK YOU!!!</a>
+        </div>
+      </div>
         <footer class="footer">
                 <div class="container">
                       <p>
@@ -261,6 +273,7 @@
       $(document).ready(function() {
     $('select').formSelect();
   });
+                //submit button results
         $(".submit").on("click", function (event) {
             event.preventDefault();
             // Here we grab the form elements
@@ -282,8 +295,8 @@
             };
             console.log(newMatch);
 
-            $.post("/api/data", newMatch,
-                function () {
+            $.post("/api/friends", newMatch,
+                function (data) {
                     alert("You're friend is waiting on the other side!");
                     // Clear the form when submitting
                     $("#Q1").val("");
