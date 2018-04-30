@@ -241,10 +241,11 @@
             </div>
         </div>
         <div class="row">
-            <button data-toggle="modal1" class="btn waves-effect waves-light submit modal-trigger" type="submit" name="action">Submit
-                <i class="material-icons right">send</i>
+            <button data-target="modal1" class="btn waves-effect waves-light submit btn modal-trigger" type="button" name="action">Find!
+                <i class="material-icons right">people</i>
             </button>
         </div>
+          <!-- Modal Trigger -->
           <!-- Modal Structure -->
   <div id="modal1" class="modal">
         <div class="modal-content">
@@ -256,6 +257,7 @@
           <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">THANK YOU!!!</a>
         </div>
       </div>
+
         <footer class="footer">
                 <div class="container">
                       <p>
@@ -272,6 +274,7 @@
     <script type="text/javascript">
       $(document).ready(function() {
     $('select').formSelect();
+    $('.modal').modal();
   });
                 //submit button results
         $(".submit").on("click", function (event) {
@@ -296,8 +299,8 @@
             console.log(newMatch);
 
             $.post("/api/friends", newMatch,
-                function (data) {
-                    alert("You're friend is waiting on the other side!");
+                function () {
+                    //alert("You're friend is waiting on the other side!");
                     // Clear the form when submitting
                     $("#Q1").val("");
                     $("#Q2").val("");
@@ -311,6 +314,25 @@
                     $("#Q10").val("");
                 });
         });
+
+
+
+// <!-- 
+//         function diffArrays() {
+            
+//             var grandTotal = 0;
+//             for (var i = 0; i < 5; i++) {
+//                 var score = arr1[i] - arr2[i];
+//                     grandTotal += score;
+//   }
+//               return grandTotal;
+// }
+//         const compArr = [];
+        
+//         for (var i = 0; i < users.length; i++) {
+//             const iNeedLove = diffArrays(currentUser, users[i]);
+//             compArr.push(iNeedLove);
+//             } -->
     </script>
 </body>
 

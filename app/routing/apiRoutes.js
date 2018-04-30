@@ -7,7 +7,7 @@ app.get("/api/friends", function(req, res)  {
     res.json(friendsData);
 });
 //pushes friends data to JS array (does this nees JSON?)
-app.post("api/friends", function(req, res)  {
+app.post("/api/friends", function(req, res)  {
     friendsData.push(req.body);
     res.json(true);
 });
