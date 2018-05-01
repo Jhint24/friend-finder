@@ -2,9 +2,9 @@
     "name": "friend-finder",
     "version": "1.0.0",
     "description": "",
-    "main": "server.js",
+    "main": "/server.js",
     "scripts": {
-      "start": "node server.js"
+      "start": "node /server.js"
     },
     "author": "Josh Hinton",
     "license": "ISC",
