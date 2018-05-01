@@ -9,11 +9,9 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 
-
-
 //require route files 
-require("app/routing/apiroutes")(app);
-require("app/routing/htmlRoutes")(app);
+require("./app/routing/apiroutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 //start server with listener
 
